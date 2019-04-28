@@ -1,5 +1,5 @@
 from enum import Enum
 
-class MusicType(Enum):
-    INSTRUMENTAL = 1
-    VOCAL = 2
+class MusicType(str, Enum):
+    INSTRUMENTAL: str = "instrumental"
+    VOCAL: str = "vocal"

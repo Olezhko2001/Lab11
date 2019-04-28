@@ -14,3 +14,6 @@ class FolkMusic(MusicComposition):
         super().__init__(name, price, MusicType.VOCAL,
                          length, release_year, Genre.FOLK, performer)
         self.nation = nation
+
+    def __str__(self):
+        return super().__str__() + ", nation = {}".format(self.nation)
