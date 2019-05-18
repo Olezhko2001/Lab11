@@ -15,3 +15,10 @@ class MusicComposition:
         self.release_year = release_year
         self.genre = genre
         self.performer = performer
+
+    def __str__(self):
+        return ("name = {}, price = ${}, music type = {}," +
+            "length = {}, release year = {}, genre = {}," +
+            "performer = {}").format(self.name, self.price,
+            self.music_type, self.length, self.release_year,
+            self.genre, self.performer)

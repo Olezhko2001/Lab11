@@ -14,3 +14,6 @@ class ClassicalMusic(MusicComposition):
         super().__init__(name, price, MusicType.INSTRUMENTAL,
                          length, release_year, Genre.CLASSICAL, performer)
         self.composer = composer
+
+    def __str__(self):
+        return super().__str__() + ", composer = {}".format(self.composer)
